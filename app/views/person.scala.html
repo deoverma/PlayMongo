@@ -1,0 +1,14 @@
+@(names: List[String])
+
+
+@main(title = "Result") {
+
+		
+	@for(name <- names) {
+            <li>Hello @name!</li>
+    }
+	
+	<p class="buttons">
+        <a href="@routes.Application.index">Back to the form</a>
+    </p>  
+}
